@@ -1,0 +1,2 @@
+#!/bin/bash
+rm -rf test_cwd ; mkdir test_cwd ; touch test_cwd/file1 ;  touch test_cwd/file2 ;  touch test_cwd/file3 ; touch test_cwd/ls_cwd_content ; cd test_cwd ; ls -la | grep -v cwd_state | grep -v total | grep -v '''drwxr*.*root''' |  cut -d: -f2 | cut -d\  -f2
